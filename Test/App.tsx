@@ -1,49 +1,28 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 function App(): JSX.Element {
   return (
-    <SafeAreaView style={styles.backgroundStyle}>
-      <Text style = {styles.text}>Hello World</Text>
-    </SafeAreaView>
+    <LinearGradient
+      colors={['#4c669f', '#3b5998', '#192f6a']}
+      style={styles.backgroundStyle}>
+      <SafeAreaView>
+        <Text style={styles.text}>Hello World</Text>
+      </SafeAreaView>
+    </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
-  backgroundStyle:{
+  backgroundStyle: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
-  text:{
+  text: {
     fontSize: 40,
     textAlign: 'center',
     fontFamily: 'DeliciousHandrawn-Regular',
-  }
+  },
 });
 
 export default App;
