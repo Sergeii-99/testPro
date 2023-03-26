@@ -7,7 +7,7 @@ function App(): JSX.Element {
     <LinearGradient
       colors={['#4c669f', '#3b5998', '#192f6a']}
       style={styles.backgroundStyle}>
-      <SafeAreaView>
+      <SafeAreaView style={styles.container}>
         <Text style={styles.text}>Hello World</Text>
       </SafeAreaView>
     </LinearGradient>
@@ -17,6 +17,11 @@ function App(): JSX.Element {
 const styles = StyleSheet.create({
   backgroundStyle: {
     flex: 1,
+  },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   text: {
     fontSize: 40,
