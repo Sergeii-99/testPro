@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import {Home} from './assets';
+
 
 function App(): JSX.Element {
   return (
@@ -9,6 +11,7 @@ function App(): JSX.Element {
       style={styles.backgroundStyle}>
       <SafeAreaView style={styles.container}>
         <Text style={styles.text}>Hello World</Text>
+        <Home width={45} height={45}/>
       </SafeAreaView>
     </LinearGradient>
   );
